@@ -1,0 +1,2 @@
+Arrow function envolta por parentesis 'retorna' por padrao
+proxy engana erro de CORS

@@ -1,0 +1,152 @@
+/* Base */
+
+img {
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: url(../img/clean-day-2.jpg) no-repeat center center/cover;
+}
+
+.container-narrow {
+  max-width: 750px;
+}
+
+/* Utilities */
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.my-3 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.text-bold {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+/* Today */
+.today {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+  margin: 3rem 0;
+  padding: 1.5rem;
+}
+
+.today p {
+  margin-bottom: 0;
+}
+
+.today-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.today-weekday {
+  font-size: 2rem;
+}
+
+.today-time {
+  width: 50%;
+  font-size: 10rem;
+  font-weight: 200;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.today-weather {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  padding: 0 1.5rem;
+}
+
+.today-weather > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.today-temp {
+  font-size: 10rem;
+  font-weight: 200;
+}
+
+.today-icon::before,
+.today-icon::after {
+  font-size: 9rem !important;
+}
+
+.today-desc {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.today-minmax {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.today-minmax p {
+  font-size: 2rem;
+}
+
+/* Week */
+.week {
+  display: flex;
+  justify-content: space-evenly;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+}
+
+.week p {
+  margin-bottom: 0;
+}
+
+.week-item {
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.week-item:first-child {
+  border-left: none;
+}
+
+.week-icon {
+  height: 50px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+  .today-time,
+  .today-weather {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .today-minmax {
+    padding-top: 3rem;
+  }
+}
